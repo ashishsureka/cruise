@@ -1,0 +1,13 @@
+Replace with your mysql credentials and host in 
+
+"cruise/application/admincp/database.php"
+"cruise/application/front/database.php"
+
+
+$db['default']['hostname'] = 'localhost';
+	
+$db['default']['username'] = 'wwsptalg_user16';
+	
+$db['default']['password'] = 'A1oa%Z(#T77^';
+	
+$db['default']['database'] = 'wwsptalg_db16';

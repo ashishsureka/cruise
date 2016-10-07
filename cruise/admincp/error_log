@@ -1,0 +1,1 @@
+[26-Aug-2016 08:10:28 America/New_York] PHP Fatal error:  Call to a member function num_rows() on boolean in /home/wwsptalg/public_html/projects16/cruise/application/admincp/models/common.php on line 95

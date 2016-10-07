@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cruise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />       
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+        <link href="css/style.css" rel='stylesheet' type='text/css' />
+        <link href="css/font-awesome.css" rel='stylesheet' type='text/css' />
+        <link href="css/responsive.css" rel='stylesheet' type='text/css' />                          
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <!--header start-->
+    <header id="header_con">
+        <div class="topheader">
+            <div class="container">
+                <div class="logo col-sm-6">
+                    <a href="index.html"><img src="images/Logo.png" alt="Cruise" title="Cruise"></a>
+                </div>
+                <div class="col-sm-6 right_button">
+                    <div class="div_button pull-right">
+                        <span>Welcome, John
+                            <a href="index.html" type="submit" class=""><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inner_head">
+            <div class="container">
+                <div class="col-sm-6 head_left"><h2>ELECTRICAL BIKE</h2></div>
+                <div class="col-sm-6 head_right"><button type="submit" class="btn buttons" data-toggle="modal" data-target="#myModal6"> <i class="fa fa-plus" aria-hidden="true"></i>Add Module</button></div>
+                <div class="modal fade" id="myModal6" role="dialog">
+                    <div class="modal-dialog" >
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal"><img src="images/x.png" alt="close"/></button>
+                            <div class="modal-body" id="sign_up">
+                                <div class="login text-center" id="pro">
+                                    <h1>Create New Module</h1>
+                                    <div class="con_mail">
+                                        <input type="text" placeholder="Module Title *"/>
+                                        <textarea placeholder="Module Description * (max 500 Words)" class="textare"></textarea>
+                                        <button type="submit" class="btn fill_btn">Cancel</button>
+                                        <button type="submit" class="btn fill_btn send">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header end-->
+    <!--content start-->
+    <div class="content">
+        <!--tab start-->
+        <div class="container" id="module_con">
+            <!--left tab start-->
+            <div class="col-sm-3">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab_a" data-toggle="tab"><img src="images/icon_group_unselect.png" class="norm"/> <img src="images/icon_group_select.png" class="act"/>Contributers <img src="images/right_arrow.png" class="arrow"/></a></li>
+                    <li class="general"><a href="#tab_b" data-toggle="tab" class="generic requi"><img src="images/icon_inbox_unselect.png" class="norm"/> <img src="images/icon_inbox_select.png" class="act"/>Generic Requirements <img src="images/right_arrow.png" class="arrow"/></a></li>
+                    <li class="button-dropdown">
+                        <a class="dropdown-toggle generic"  data-toggle="dropdown" href="javascript:void(0)"><img src="images/icon_list_unselect.png" class="norm"/> <img src="images/icon_list_select.png" class="act"/> Modules<img src="images/right_arrow.png" class="arrow a1"/><img src="images/down_arrow.png" class="darrow"/></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#tab_d1" data-toggle="tab">Module 1<img src="images/right_arrow.png" class="arrow"/></a></li>
+                            <li><a href="#tab_d2" data-toggle="tab">Module 2 <img src="images/right_arrow.png" class="arrow"/></a></li>
+                            <li><a href="#tab_d3" data-toggle="tab">Module 3 <img src="images/right_arrow.png" class="arrow"/></a></li>
+                        </ul> 
+                    </li>
+                </ul><!-- end of nav -->
+            </div>
+            <!--left tab end-->
+            <!--right content start-->
+            <div class="col-sm-9 tab-content">
+                <!--contributor start-->
+                <div class="tab-pane active" id="tab_a">
+                    <div class="tab_tead"><h4>Contributors</h4><button type="submit" class="btn buttons" data-toggle="modal" data-target="#myModal2"> <i class="fa fa-paper-plane-o" aria-hidden="true"></i>Send Invites</button></div>
+                    <div class="modal fade" id="myModal2" role="dialog">
+                        <div class="modal-dialog" >
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <button type="button" class="close" data-dismiss="modal"><img src="images/x.png" alt="close"/></button>
+                                <div class="modal-body" id="sign_up">
+                                    <div class="edit_con login text-center" id="invite">
+                                        <h1>Send Invites</h1>
+                                        <div class="con_mail">
+
+                                            <textarea placeholder="Project Description * (max 500 Words)">John@gmail.com,avc@gmail.</textarea>
+                                            <button type="submit" class="btn fill_btn">Back</button>
+                                            <button type="submit" class="btn fill_btn send">Send</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" tab_inner">
+                        <ul>
+                            <li>
+                                <p>john_deo@gmail.com <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></p>
+                            </li>
+                            <li>
+                                <p>lara123@yahoo.com <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></p>
+                            </li>
+                            <li>
+                                <p>marina@gmail.com <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></p>
+                            </li>
+                            <li>
+                                <p>jack_john@hotmail.com <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></p>
+                            </li>
+                            <li>
+                                <p>medona@gmail.com <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--contributor end-->
+                <!--requirement start-->
+                <div class="tab-pane " id="tab_b">
+                    <div class="require_tab">
+                        <div class="tab_tead"><h4>Requirements</h4><button type="submit" class="btn buttons" data-toggle="modal" data-target="#myModal7"> <i class="fa fa-plus" aria-hidden="true"></i>Add Requirement</button></div>
+                        <div class="modal fade" id="myModal7" role="dialog">
+                            <div class="modal-dialog" >
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <button type="button" class="close" data-dismiss="modal"><img src="images/x.png" alt="close"/></button>
+                                    <div class="modal-body" id="sign_up">
+                                        <div class="login text-center" id="pro">
+                                            <h1>Create New Requirement</h1>
+                                            <div class="con_mail">
+                                                <input type="text" placeholder="Requirement Title *"/>
+                                                <textarea placeholder="Requirement Description * (max 500 Words)" class="textare"></textarea>
+                                                <button type="submit" class="btn fill_btn">Cancel</button>
+                                                <button type="submit" class="btn fill_btn send">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--Sections start-->
+                        <section>
+                            <div class="requirement_con">
+                                <div class="col-sm-12">
+                                    <div class="project_con">
+                                        <div class="col-sm-1 heading_pro2">
+                                            <h5>Sr.No</h5>
+                                        </div>
+                                        <div class="col-sm-6 heading_pro2">
+                                            <h5>Requirement Title</h5>
+                                        </div>
+                                        <div class="col-sm-3 heading_pro2">
+                                            <h5>Actions</h5>
+                                        </div>
+                                        <div class="col-sm-2 heading_pro2">
+                                            <h5>Priority</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="project_desc2">
+                                        <div class="col-sm-1 pro_content2 fi_head">
+                                            <h3>Sr.No</h3>
+                                            <h5>1</h5>
+                                        </div>
+                                        <div class="col-sm-6 pro_content2">
+                                            <h3>Requirement Title</h3>
+                                            <h5>Create Project Requirements</h5>
+                                        </div>
+                                        <div class="col-sm-3 pro_content2 last_head">
+                                            <h3>Actions</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+
+                                                <li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-2 pro_content2 last_head2">
+                                            <h3>Priority</h3>
+                                            <h5><img src="images/high_pri.png"/>High</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="project_desc2">
+                                        <div class="col-sm-1 pro_content2 fi_head">
+                                            <h3>Sr.No</h3>
+                                            <h5>2</h5>
+                                        </div>
+                                        <div class="col-sm-6 pro_content2">
+                                            <h3>Requirement Title</h3>
+                                            <h5>Edit User detail Requirements</h5>
+                                        </div>
+                                        <div class="col-sm-3 pro_content2 last_head">
+                                            <h3>Actions</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" ><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-2 pro_content2 last_head2">
+                                            <h3>Priority</h3>
+                                            <h5><img src="images/medium.png"/>Medium</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="project_desc2">
+                                        <div class="col-sm-1 pro_content2 fi_head">
+                                            <h3>Sr. No.</h3>
+                                            <h5>3</h5>
+                                        </div>
+                                        <div class="col-sm-6 pro_content2">
+                                            <h3>Requirement Title</h3>
+                                            <h5>Create New Project Requirements</h5>
+                                        </div>
+                                        <div class="col-sm-3 pro_content2 last_head">
+                                            <h3>Actions</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-2 pro_content2 last_head2">
+                                            <h3>Priority</h3>
+                                            <h5><img src="images/low_pri.png"/>Low</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--section end-->
+                    </div>
+                    <div class="content_comment">
+                        <div class="tab_tead"><h4>Generic Requirements</h4></div>
+                        <div class="tab_tead sec_con"><h4> Electric Bike Requirements</h4></div>
+                        <div class="col-sm-12 comment_part">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <div class="arrow-left"></div>
+                            <textarea class="comment"/></textarea>
+                            <span>Character remaining:3000</span>
+                        </div>
+                        <div class="col-sm-12 sort">
+                            <p>Sort By : 
+                                <select class="sort_select">
+                                    <option>Newest</option>
+                                    <option>Oldest</option>
+                                    <option>Yesterday</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="comment_con">
+                            <div class="col-sm-12">
+                                <p>2 Comments</p>
+                            </div>
+                            <div class="col-sm-12 comm odd">
+                                <div class="comments">
+                                    <img src="images/comments.png" class="comment_img"/>
+                                    <div class="comm_con">
+                                        <h5>John Deo</h5>
+                                        <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus.</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Reply</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Like</a>
+                                            </li>
+                                            <li>Aug 10, 2016
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 comm even">
+                                <div class="comments">
+                                    <img src="images/comments.png" class="comment_img"/>
+                                    <div class="comm_con">
+                                        <h5>John Deo</h5>
+                                        <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus.</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Reply</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Like</a>
+                                            </li>
+                                            <li>Aug 10, 2016
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="comments inner">
+                                    <img src="images/comments.png" class="comment_img"/>
+                                    <div class="comm_con">
+                                        <h5>John Deo</h5>
+                                        <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus.</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Reply</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Like</a>
+                                            </li>
+                                            <li>Aug 10, 2016
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--requirement end-->
+                <!--module start-->
+                <div class="tab-pane" id="tab_d1">
+                    <div class="require_tab">
+                        <div class="tab_tead"><h4>Module Title 1</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Module</a></li>
+                                <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete Module</a></li>
+                                <li><a href="#">View Details <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+
+                            </ul>
+                        </div>
+                        <div class="tab_tead sec_con"><h4>Requirements</h4><button type="submit" class="btn buttons" data-toggle="modal" data-target="#myModal8"> <i class="fa fa-plus" aria-hidden="true"></i>Add Requirement</button></div>
+                        <div class="modal fade" id="myModal8" role="dialog">
+                            <div class="modal-dialog" >
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <button type="button" class="close" data-dismiss="modal"><img src="images/x.png" alt="close"/></button>
+                                    <div class="modal-body" id="sign_up">
+                                        <div class="login text-center" id="pro">
+                                            <h1>Create New Requirement</h1>
+                                            <div class="con_mail">
+                                                <input type="text" placeholder="Requirement Title *"/>
+                                                <textarea placeholder="Requirement Description * (max 500 Words)" class="textare"></textarea>
+                                                <button type="submit" class="btn fill_btn">Cancel</button>
+                                                <button type="submit" class="btn fill_btn send">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Sections start-->
+                        <section>
+                            <div class="requirement_con">
+                                <div class="col-sm-12">
+                                    <div class="project_con">
+                                        <div class="col-sm-1 heading_pro2">
+                                            <h5>Sr.No</h5>
+                                        </div>
+                                        <div class="col-sm-6 heading_pro2">
+                                            <h5>Requirement Title</h5>
+                                        </div>
+                                        <div class="col-sm-3 heading_pro2">
+                                            <h5>Actions</h5>
+                                        </div>
+                                        <div class="col-sm-2 heading_pro2">
+                                            <h5>Priority</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="project_desc2">
+                                        <div class="col-sm-1 pro_content2 fi_head">
+                                            <h3>Sr.No</h3>
+                                            <h5>1</h5>
+                                        </div>
+                                        <div class="col-sm-6 pro_content2">
+                                            <h3>Requirement Title</h3>
+                                            <h5>Create Project Requirements</h5>
+                                        </div>
+                                        <div class="col-sm-3 pro_content2 last_head">
+                                            <h3>Actions</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-2 pro_content2 last_head2">
+                                            <h3>Priority</h3>
+                                            <h5><img src="images/high_pri.png"/>High</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="project_desc2">
+                                        <div class="col-sm-1 pro_content2 fi_head">
+                                            <h3>Sr.No</h3>
+                                            <h5>2</h5>
+                                        </div>
+                                        <div class="col-sm-6 pro_content2">
+                                            <h3>Requirement Title</h3>
+                                            <h5>Edit User detail Requirements</h5>
+                                        </div>
+                                        <div class="col-sm-3 pro_content2 last_head">
+                                            <h3>Actions</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-2 pro_content2 last_head2">
+                                            <h3>Priority</h3>
+                                            <h5><img src="images/medium.png"/>Medium</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="project_desc2">
+                                        <div class="col-sm-1 pro_content2 fi_head">
+                                            <h3>Sr. No.</h3>
+                                            <h5>3</h5>
+                                        </div>
+                                        <div class="col-sm-6 pro_content2">
+                                            <h3>Requirement Title</h3>
+                                            <h5>Create New Project Requirements</h5>
+                                        </div>
+                                        <div class="col-sm-3 pro_content2 last_head">
+                                            <h3>Actions</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                                <li><a href="#" class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-2 pro_content2 last_head2">
+                                            <h3>Priority</h3>
+                                            <h5><img src="images/low_pri.png"/>Low</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--section end-->
+                    </div>
+                    <div class="content_comment">
+                        <div class="tab_tead"><h4>4 Cell Electrical Bike</h4></div>
+                        <div class="tab_tead sec_con"><h4><p>Generic Requirements : </p> Electric Bike Requirements</h4></div>
+                        <div class="col-sm-12 comment_part">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <div class="arrow-left"></div>
+                            <textarea class="comment"/></textarea>
+                            <span>Character remaining:3000</span>
+                        </div>
+                        <div class="col-sm-12 sort">
+                            <p>Sort By : 
+                                <select class="sort_select">
+                                    <option>Newest</option>
+                                    <option>Oldest</option>
+                                    <option>Yesterday</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="comment_con">
+                            <div class="col-sm-12">
+                                <p>2 Comments</p>
+                            </div>
+                            <div class="col-sm-12 comm odd">
+                                <div class="comments">
+                                    <img src="images/comments.png" class="comment_img"/>
+                                    <div class="comm_con">
+                                        <h5>John Deo</h5>
+                                        <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus.</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Reply</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Like</a>
+                                            </li>
+                                            <li>Aug 10, 2016
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 comm even">
+                                <div class="comments">
+                                    <img src="images/comments.png" class="comment_img"/>
+                                    <div class="comm_con">
+                                        <h5>John Deo</h5>
+                                        <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus.</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Reply</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Like</a>
+                                            </li>
+                                            <li>Aug 10, 2016
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="comments inner">
+                                    <img src="images/comments.png" class="comment_img"/>
+                                    <div class="comm_con">
+                                        <h5>John Deo</h5>
+                                        <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus.</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Reply</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Like</a>
+                                            </li>
+                                            <li>Aug 10, 2016
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--module 1 end -->
+                <!--module 2 start -->
+                <div class="tab-pane" id="tab_d2">
+                    <div class="tab_tead"><h4>Module Title 2</h4>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Module</a></li>
+                            <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete Module</a></li>
+                            <li><a href="#">View Details <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab_tead sec_con"><h4>Requirements</h4><button type="submit" class="btn buttons" data-toggle="modal" data-target="#myModal9"> <i class="fa fa-plus" aria-hidden="true"></i>Add Requirement</button></div>
+                    <div class="modal fade" id="myModal9" role="dialog">
+                        <div class="modal-dialog" >
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <button type="button" class="close" data-dismiss="modal"><img src="images/x.png" alt="close"/></button>
+                                <div class="modal-body" id="sign_up">
+                                    <div class="login text-center" id="pro">
+                                        <h1>Create New Requirement</h1>
+                                        <div class="con_mail">
+                                            <input type="text" placeholder="Requirement Title *"/>
+                                            <textarea placeholder="Requirement Description * (max 500 Words)" class="textare"></textarea>
+                                            <button type="submit" class="btn fill_btn">Cancel</button>
+                                            <button type="submit" class="btn fill_btn send">Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Sections start-->
+                    <section>
+                        <div class="requirement_con">
+                            <div class="col-sm-12">
+                                <div class="project_con">
+                                    <div class="col-sm-1 heading_pro2">
+                                        <h5>Sr.No</h5>
+                                    </div>
+                                    <div class="col-sm-6 heading_pro2">
+                                        <h5>Requirement Title</h5>
+                                    </div>
+                                    <div class="col-sm-3 heading_pro2">
+                                        <h5>Actions</h5>
+                                    </div>
+                                    <div class="col-sm-2 heading_pro2">
+                                        <h5>Priority</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="project_desc2">
+                                    <div class="col-sm-1 pro_content2 fi_head">
+                                        <h3>Sr.No</h3>
+                                        <h5>1</h5>
+                                    </div>
+                                    <div class="col-sm-6 pro_content2">
+                                        <h3>Requirement Title</h3>
+                                        <h5>Create Project Requirements</h5>
+                                    </div>
+                                    <div class="col-sm-3 pro_content2 last_head">
+                                        <h3>Actions</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                            <li><a href="#" class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-2 pro_content2 last_head2">
+                                        <h3>Priority</h3>
+                                        <h5><img src="images/high_pri.png"/>High</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="project_desc2">
+                                    <div class="col-sm-1 pro_content2 fi_head">
+                                        <h3>Sr.No</h3>
+                                        <h5>2</h5>
+                                    </div>
+                                    <div class="col-sm-6 pro_content2">
+                                        <h3>Requirement Title</h3>
+                                        <h5>Edit User detail Requirements</h5>
+                                    </div>
+                                    <div class="col-sm-3 pro_content2 last_head">
+                                        <h3>Actions</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                            <li><a href="#" class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-2 pro_content2 last_head2">
+                                        <h3>Priority</h3>
+                                        <h5><img src="images/medium.png"/>Medium</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="project_desc2">
+                                    <div class="col-sm-1 pro_content2 fi_head">
+                                        <h3>Sr. No.</h3>
+                                        <h5>3</h5>
+                                    </div>
+                                    <div class="col-sm-6 pro_content2">
+                                        <h3>Requirement Title</h3>
+                                        <h5>Create New Project Requirements</h5>
+                                    </div>
+                                    <div class="col-sm-3 pro_content2 last_head">
+                                        <h3>Actions</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                            <li><a href="#" class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-2 pro_content2 last_head2">
+                                        <h3>Priority</h3>
+                                        <h5><img src="images/low_pri.png"/>Low</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--module 2 end-->
+                <!--module 3 start-->
+                <div class="tab-pane" id="tab_d3">
+                    <div class="tab_tead"><h4>Module Title 3</h4>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Module</a></li>
+                            <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete Module</a></li>
+                            <li><a href="#">View Details <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab_tead sec_con"><h4>Requirements</h4><button type="submit" class="btn buttons" data-toggle="modal" data-target="#myModal7"> <i class="fa fa-plus" aria-hidden="true"></i>Add Requirement</button></div>
+                    <!--Sections start-->
+                    <section>
+                        <div class="requirement_con">
+                            <div class="col-sm-12">
+                                <div class="project_con">
+                                    <div class="col-sm-1 heading_pro2">
+                                        <h5>Sr.No</h5>
+                                    </div>
+                                    <div class="col-sm-6 heading_pro2">
+                                        <h5>Requirement Title</h5>
+                                    </div>
+                                    <div class="col-sm-3 heading_pro2">
+                                        <h5>Actions</h5>
+                                    </div>
+                                    <div class="col-sm-2 heading_pro2">
+                                        <h5>Priority</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="project_desc2">
+                                    <div class="col-sm-1 pro_content2 fi_head">
+                                        <h3>Sr.No</h3>
+                                        <h5>1</h5>
+                                    </div>
+                                    <div class="col-sm-6 pro_content2">
+                                        <h3>Requirement Title</h3>
+                                        <h5>Create Project Requirements</h5>
+                                    </div>
+                                    <div class="col-sm-3 pro_content2 last_head">
+                                        <h3>Actions</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                            <li><a href="#" class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-2 pro_content2 last_head2">
+                                        <h3>Priority</h3>
+                                        <h5><img src="images/high_pri.png"/>High</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="project_desc2">
+                                    <div class="col-sm-1 pro_content2 fi_head">
+                                        <h3>Sr.No</h3>
+                                        <h5>2</h5>
+                                    </div>
+                                    <div class="col-sm-6 pro_content2">
+                                        <h3>Requirement Title</h3>
+                                        <h5>Edit User detail Requirements</h5>
+                                    </div>
+                                    <div class="col-sm-3 pro_content2 last_head">
+                                        <h3>Actions</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                            <li><a href="#" class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-2 pro_content2 last_head2">
+                                        <h3>Priority</h3>
+                                        <h5><img src="images/medium.png"/>Medium</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="project_desc2">
+                                    <div class="col-sm-1 pro_content2 fi_head">
+                                        <h3>Sr. No.</h3>
+                                        <h5>3</h5>
+                                    </div>
+                                    <div class="col-sm-6 pro_content2">
+                                        <h3>Requirement Title</h3>
+                                        <h5>Create New Project Requirements</h5>
+                                    </div>
+                                    <div class="col-sm-3 pro_content2 last_head">
+                                        <h3>Actions</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                            <li><a href="#" class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-2 pro_content2 last_head2">
+                                        <h3>Priority</h3>
+                                        <h5><img src="images/low_pri.png"/>Low</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--module 3 end-->
+            </div>
+            <!-- right content end -->
+
+        </div>
+        <!--tab end-->
+    </div>
+    <!--content end-->
+    <footer>
+        <div class="container">
+            <div class="col-sm-12">
+                <ul class="footer_menu">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+        <script>
+            $(function () {
+                $('#media').change(function () {
+                    $('.contents').hide();
+                    $('#' + $(this).val()).show();
+                });
+            });
+            $(function () {
+                $('#media2').change(function () {
+                    $('.contents').hide();
+                    $('#' + $(this).val()).show();
+                });
+            });
+            $(function () {
+                $('#media3').change(function () {
+                    $('.contents').hide();
+                    $('#' + $(this).val()).show();
+                });
+            });
+
+        </script>
+        <script>
+            $(".forgatp").click(function () {
+                $("#detail").hide();
+                $("#edits").show();
+
+            });
+            $(".forgatp").click(function () {
+                $("#detail2").hide();
+                $("#edits2").show();
+
+            });
+            $(".invi").click(function () {
+                $("#pro").hide();
+                $("#invite").show();
+
+            });
+            $(".save").click(function () {
+                $("#edits").hide();
+                $("#detail").show();
+
+            });
+            $(".comment").click(function () {
+                $(".require_tab").hide();
+                $(".content_comment").show();
+
+            });
+            $(".generic").click(function () {
+                $(".content_comment").hide();
+                $(".require_tab").show();
+
+            });
+
+
+        </script>
+        <script>
+
+            $(".button-dropdown").click(function () {
+
+                $(".dropdown-menu li:first-child").addClass("active");
+                $("#tab_d1").addClass("active");
+                $(".general").removeClass("active");
+                $("#tab_b").removeClass("active");
+                $("#tab_a").removeClass("active");
+                $("#tab_d2").removeClass("active");
+                $("#tab_d3").removeClass("active");
+            });
+            $(function () {
+                // The user clicks anywhere in the document
+                $(document).click(function (e) {
+                    // If a dropdown has a class active AND if the dropdown or the link is not the target of the click
+                    if ($(".dropdown-menu li").hasClass("active") && !$(".dropdown-menu li").is(e.target)) {
+                        // Remove class active
+                        $(".dropdown-menu li.active").removeClass("active");
+                    }
+
+                });
+
+            });
+            $(".nav-tabs li").click(function () {
+
+                $(".nav-tabs > li").show();
+                document.getElementsByTagName("dropdown-menu")[0].removeAttribute("style");
+
+            });
+        </script>
+    </body>
+</html>

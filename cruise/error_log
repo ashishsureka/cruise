@@ -1,0 +1,9 @@
+[08-Sep-2016 08:10:03 America/New_York] PHP Fatal error:  Call to a member function num_rows() on boolean in /home/wwsptalg/public_html/projects16/cruise/application/front/models/common.php on line 51
+[08-Sep-2016 08:10:14 America/New_York] PHP Fatal error:  Call to a member function num_rows() on boolean in /home/wwsptalg/public_html/projects16/cruise/application/front/models/common.php on line 51
+[08-Sep-2016 08:10:17 America/New_York] PHP Fatal error:  Call to a member function num_rows() on boolean in /home/wwsptalg/public_html/projects16/cruise/application/front/models/common.php on line 51
+[08-Sep-2016 08:10:27 America/New_York] PHP Fatal error:  Call to a member function num_rows() on boolean in /home/wwsptalg/public_html/projects16/cruise/application/front/models/common.php on line 51
+[09-Sep-2016 07:36:11 America/New_York] PHP Fatal error:  Call to a member function num_rows() on boolean in /home/wwsptalg/public_html/projects16/cruise/application/front/models/common.php on line 51
+[09-Sep-2016 07:36:22 America/New_York] PHP Fatal error:  Call to a member function num_rows() on boolean in /home/wwsptalg/public_html/projects16/cruise/application/front/models/common.php on line 51
+[09-Sep-2016 07:36:38 America/New_York] PHP Fatal error:  Call to a member function num_rows() on boolean in /home/wwsptalg/public_html/projects16/cruise/application/front/models/common.php on line 51
+[09-Sep-2016 07:37:31 America/New_York] PHP Fatal error:  Call to a member function num_rows() on boolean in /home/wwsptalg/public_html/projects16/cruise/application/front/models/common.php on line 51
+[09-Sep-2016 07:38:10 America/New_York] PHP Fatal error:  Call to a member function num_rows() on boolean in /home/wwsptalg/public_html/projects16/cruise/application/front/models/common.php on line 51

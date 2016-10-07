@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <coverage xmlns="http://www.netbeans.org/ns/code-coverage/1" enabled="false"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/views/pages/edit.php</file>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/views/email_format/index.php</file>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/views/seo/index.php</file>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/views/pages/index.php</file>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/controllers/emailsetting.php</file>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/views/setting/index.php</file>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/views/dashboard/edit_profile.php</file>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/controllers/pages.php</file>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/views/emailsetting/index.php</file>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/controllers/seo.php</file>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/models/settings.php</file>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/controllers/email_format.php</file>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/views/dashboard/change_password.php</file>
+            <file>file:/D:/xampp/htdocs/cruise/application/admincp/views/email_format/edit.php</file>
+        </group>
+    </open-files>
+</project-private>

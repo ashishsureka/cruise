@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cruise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />       
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+        <link href="css/style.css" rel='stylesheet' type='text/css' />
+        <link href="css/font-awesome.css" rel='stylesheet' type='text/css' />
+        <link href="css/responsive.css" rel='stylesheet' type='text/css' />                          
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--header start-->
+        <header>
+            <div class="topheader">
+                <div class="container">
+                    <div class="logo col-sm-6">
+                        <a href="index.html"><img src="images/Logo.png" alt="Cruise" title="Cruise"></a>
+                    </div>
+                    <div class="col-sm-6 right_button">
+                        <div class="div_button pull-right">
+                            <span>Welcome, John
+                                <a href="index.html" type="submit" class=""><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--header end-->
+        <!--content start-->
+        <div class="content">
+            <div class="container">
+                <div class="col-sm-12 heading">
+                    <h4>CRUISE DASHBOARD</h4>
+                </div>
+            </div>
+            <div class="con_head text-center">
+                <h2>PROJECT OVERVIEW</h2>
+            </div>
+            <!--Sections start-->
+            <section>
+                <div class="container">
+                    <div class="col-sm-12">
+                        <div class="cre_btn  pull-right">
+                            <button type="submit" class="btn buttons" data-toggle="modal" data-target="#myModal2"> <i class="fa fa-plus" aria-hidden="true"></i>Create Project</button>
+
+                            <!--//////////////////create project popup start////////////////////-->
+                            <div class="modal fade" id="myModal2" role="dialog">
+                                <div class="modal-dialog" >
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal"><img src="images/x.png" alt="close"/></button>
+                                        <div class="modal-body" id="sign_up">
+                                            <div class="login text-center" id="pro">
+                                                <h1>Create New Project</h1>
+                                                <div class="con_mail">
+                                                    <input type="text" placeholder="Project Title *"/>
+                                                    <textarea placeholder="Project Description * (max 500 Words)" class="textare"></textarea>
+                                                    <button type="submit" class="btn fill_btn">Cancel</button>
+                                                    <button type="submit" class="btn fill_btn invi">Send Invite</button>
+                                                    <button type="submit" class="btn fill_btn">Submit</button>
+                                                </div>
+                                            </div>
+                                            <div class="edit_con login text-center" id="invite" style="display: none">
+                                                <h1>Send Invites</h1>
+                                                <div class="con_mail">
+
+                                                    <textarea placeholder="Project Description * (max 500 Words)">John@gmail.com,avc@gmail.</textarea>
+                                                    <button type="submit" class="btn fill_btn">Back</button>
+                                                    <button type="submit" class="btn fill_btn send">Send</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--//////////////////create project popup end////////////////////-->
+
+                            <button type="submit" class="btn buttons"> <i class="fa fa-trash" aria-hidden="true"></i>Delete</button>
+                            <button type="submit" class="btn buttons"> <i class="fa fa-file-text-o" aria-hidden="true"></i>Archive</button>
+                        </div>
+                    </div>
+                </div>
+                <!--//////////////////selects media popup start////////////////////-->
+                <div class="container">
+                    <div class="col-sm-12 media_con">
+                        <Select id="media">
+                            <option>Projects your own</option>
+                            <option value="potato"><i class="fa fa-circle-o" aria-hidden="true"></i> Potato Power</option>
+                            <option value="bike"><i class="fa fa-circle-o" aria-hidden="true"></i> Electrical Bike</option>
+                        </Select>
+                        <div id="potato" class="contents" style="display:none">  
+                            <div class="project_desc">
+                                <div class="col-sm-3 pro_content">
+                                    <h5><i class="fa fa-circle-o" aria-hidden="true"></i> Potato Power</h5>
+                                </div>
+                                <div class="col-sm-6 pro_content miiddle_con">
+                                    <h5><a href="#" data-toggle="modal" data-target="#myModal5">Engineering Connection</a></h5>
+                                    <div class="modal fade" id="myModal5" role="dialog">
+                                        <div class="modal-dialog" >
+
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <button type="button" class="close" data-dismiss="modal"><img src="images/x.png" alt="close"/></button>
+                                                <div class="modal-body" id="sign_up">
+                                                    <div class="login text-center" id="detail2">
+                                                        <h1>Project Details</h1>
+                                                        <div class="con_pro" >
+                                                            <h2>Engineering Connection</h2>
+                                                            <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                                            <button type="submit" class="btn fill_btn forgatp"  onClick="pop('popDiv')">Edit</button>
+
+                                                            <button type="submit" class="btn fill_btn ">Save</button>
+                                                            <button type="submit" class="btn fill_btn">Send Invite</button>
+                                                            <button type="submit" class="btn fill_btn">Continue</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="edit_con login text-center" id="edits2" style="display: none">
+                                                        <h1>Edit Details</h1>
+                                                        <div class="con_mail">
+                                                            <input type="text" placeholder="Project Title *" value="Engineering Connection"/>
+                                                            <textarea placeholder="Project Description * (max 500 Words)">Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</textarea>
+                                                            <button type="submit" class="btn buttons">Edit</button>
+                                                            <button type="submit" class="btn fill_btn save"  onClick="pop('popDiv')">Save</button>
+                                                            <button type="submit" class="btn fill_btn">Send Invite</button>
+                                                            <button type="submit" class="btn fill_btn">Continue</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                    <h5><a href="#">Procedure</a></h5>
+                                    <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                </div>
+                                <div class="col-sm-3 pro_content last_head">
+                                    <h5>03 July, 2016</h5>
+                                </div>
+                            </div> </div>
+                        <div id="bike" class="contents" style="display:none">
+                            <div class="project_desc">
+                                <div class="col-sm-3 pro_content">
+                                    <h5><i class="fa fa-circle-o" aria-hidden="true"></i> Electrical Bike</h5>
+                                </div>
+                                <div class="col-sm-6 pro_content miiddle_con">
+                                    <h5><a href="#">Titanium Bettery Bike</a></h5>
+                                    <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                </div>
+                                <div class="col-sm-3 pro_content last_head">
+                                    <h5>01 June, 2015</h5>
+                                </div>
+                            </div></div>
+
+                    </div>
+                </div>
+                <!--//////////////////selects media popup end////////////////////-->
+                <div class="container main_desc">
+                    <div class="col-sm-12">
+                        <div class="project_con">
+                            <div class="col-sm-3 heading_pro first_head">
+                                <h5>Projects your own</h5>
+                            </div>
+                            <div class="col-sm-6 heading_pro">
+                                <h5>Brief Overview</h5>
+                            </div>
+                            <div class="col-sm-3 heading_pro last_head">
+                                <h5>Date Posted</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="project_desc">
+                            <div class="col-sm-3 pro_content">
+                                <h5><i class="fa fa-circle-o" aria-hidden="true"></i> Potato Power</h5>
+                            </div>
+                            <div class="col-sm-6 pro_content miiddle_con">
+                                <h5><a href="#" data-toggle="modal" data-target="#myModal3">Engineering Connection</a></h5>
+                                <div class="modal fade" id="myModal3" role="dialog">
+                                    <div class="modal-dialog" >
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal"><img src="images/x.png" alt="close"/></button>
+                                            <div class="modal-body" id="sign_up">
+                                                <div class="login text-center" id="detail">
+                                                    <h1>Project Details</h1>
+                                                    <div class="con_pro" >
+                                                        <h2>Engineering Connection</h2>
+                                                        <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                                        <button type="submit" class="btn fill_btn forgatp"  onClick="pop('popDiv')">Edit</button>
+
+                                                        <button type="submit" class="btn fill_btn">Save</button>
+                                                        <button type="submit" class="btn fill_btn">Send Invite</button>
+                                                        <button type="submit" class="btn fill_btn">Continue</button>
+                                                    </div>
+
+                                                </div>
+                                                <div class="edit_con login text-center" id="edits" style="display: none">
+                                                    <h1>Edit Details</h1>
+                                                    <div class="con_mail">
+                                                        <input type="text" placeholder="Project Title *" value="Engineering Connection"/>
+                                                        <textarea placeholder="Project Description * (max 500 Words)">Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</textarea>
+                                                        <button type="submit" class="btn buttons">Edit</button>
+                                                        <button type="submit" class="btn fill_btn">Save</button>
+                                                        <button type="submit" class="btn fill_btn">Send Invite</button>
+                                                        <button type="submit" class="btn fill_btn">Continue</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                <h5><a href="#">Procedure</a></h5>
+                                <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                            </div>
+                            <div class="col-sm-3 pro_content last_head">
+                                <h5>03 July, 2016</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="project_desc">
+                            <div class="col-sm-3 pro_content">
+                                <h5><i class="fa fa-circle-o" aria-hidden="true"></i> Electrical Bike</h5>
+                            </div>
+                            <div class="col-sm-6 pro_content miiddle_con">
+                                <h5><a href="#">Titanium Bettery Bike</a></h5>
+                                <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                            </div>
+                            <div class="col-sm-3 pro_content last_head">
+                                <h5>01 June, 2015</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--section end-->
+            <!--section start-->
+            <section>
+                <div class="container">
+                    <div class="col-sm-12">
+                        <div class="cre_btn  pull-right">
+                            <button type="submit" class="btn buttons"> <i class="fa fa-comment" aria-hidden="true"></i>Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+                <!--//////////////////selects media popup start////////////////////-->
+                <div class="container">
+                    <div class="col-sm-12 media_con">
+                        <Select id="media2">
+                            <option>Projects As Contributors</option>
+                            <option value="eye"><i class="fa fa-circle-o" aria-hidden="true"></i> Electric Eye</option>
+                            <option value="crowd"><i class="fa fa-circle-o" aria-hidden="true"></i> Crowd Computing</option>
+                        </Select>
+                        <div id="eye" class="contents" style="display:none">  
+                            <div class="project_desc">
+                                <div class="col-sm-3 pro_content">
+                                    <h5><i class="fa fa-circle-o" aria-hidden="true"></i> Electric Eye</h5>
+                                </div>
+                                <div class="col-sm-6 pro_content miiddle_con">
+                                    <h5><a href="#">Introduction of Electric Eye</a></h5>
+                                    <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                    <h5><a href="#">Material and Instructions</a></h5>
+                                    <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                </div>
+                                <div class="col-sm-3 pro_content last_head">
+                                    <h5>10 May, 2016</h5>
+                                </div>
+                            </div> </div>
+                        <div id="crowd" class="contents" style="display:none"> <div class="project_desc">
+                                <div class="col-sm-3 pro_content">
+                                    <h5><i class="fa fa-circle-o" aria-hidden="true"></i> Crowd Computing</h5>
+                                </div>
+                                <div class="col-sm-6 pro_content miiddle_con">
+                                    <h5><a href="#">Mobile Payment Transaction</a></h5>
+                                    <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                </div>
+                                <div class="col-sm-3 pro_content last_head">
+                                    <h5>03 July, 2016</h5>
+                                </div>
+                            </div> </div>
+                    </div>
+                </div>
+                <!--//////////////////selects media popup end////////////////////-->
+                <div class="container main_desc">
+                    <div class="col-sm-12">
+                        <div class="project_con">
+                            <div class="col-sm-3 heading_pro first_head">
+                                <h5>Projects As Contributors</h5>
+                            </div>
+                            <div class="col-sm-6 heading_pro">
+                                <h5>Brief Overview</h5>
+                            </div>
+                            <div class="col-sm-3 heading_pro last_head">
+                                <h5>Date Posted</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="project_desc">
+                            <div class="col-sm-3 pro_content">
+                                <h5><i class="fa fa-circle-o" aria-hidden="true"></i> Electric Eye</h5>
+                            </div>
+                            <div class="col-sm-6 pro_content miiddle_con">
+                                <h5><a href="#">Introduction of Electric Eye</a></h5>
+                                <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                <h5><a href="#">Material and Instructions</a></h5>
+                                <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                            </div>
+                            <div class="col-sm-3 pro_content last_head">
+                                <h5>10 May, 2016</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="project_desc">
+                            <div class="col-sm-3 pro_content">
+                                <h5><i class="fa fa-circle-o" aria-hidden="true"></i> Crowd Computing</h5>
+                            </div>
+                            <div class="col-sm-6 pro_content miiddle_con">
+                                <h5><a href="#">Mobile Payment Transaction</a></h5>
+                                <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                            </div>
+                            <div class="col-sm-3 pro_content last_head">
+                                <h5>03 July, 2016</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--section ens-->
+            <!--section start-->
+            <section>
+                <div class="container">
+                    <div class="col-sm-12">
+                        <div class="cre_btn  pull-right">
+                            <button type="submit" class="btn buttons"> <i class="fa fa-eye" aria-hidden="true"></i>View Project</button>
+                            <button type="submit" class="btn buttons"> <i class="fa fa-share-alt" aria-hidden="true"></i>Contribute</button>
+                        </div>
+                    </div>
+                </div>
+                <!--//////////////////selects media popup start////////////////////-->
+                <div class="container">
+                    <div class="col-sm-12 media_con">
+                        <Select id="media3">
+                            <option>Other Projects</option>
+                            <option value="commerce"><i class="fa fa-circle-o" aria-hidden="true"></i> E-Commerce</option>
+                            <option value="social"><i class="fa fa-circle-o" aria-hidden="true"></i> Social Media</option>
+                        </Select>
+                        <div id="commerce" class="contents" style="display:none">  
+                            <div class="project_desc">
+                                <div class="col-sm-3 pro_content">
+                                    <h5><i class="fa fa-circle-o" aria-hidden="true"></i> E-Commerce</h5>
+                                </div>
+                                <div class="col-sm-6 pro_content miiddle_con">
+                                    <h5><a href="#">Mobile Shopping</a></h5>
+                                    <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                    <h5><a href="#">Money Transaction</a></h5>
+                                    <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                </div>
+                                <div class="col-sm-3 pro_content last_head">
+                                    <h5>25 March, 2016</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="social" class="contents" style="display:none">  
+                            <div class="project_desc">
+                                <div class="col-sm-3 pro_content">
+                                    <h5><i class="fa fa-circle-o" aria-hidden="true"></i> E-Commerce</h5>
+                                </div>
+                                <div class="col-sm-6 pro_content miiddle_con">
+                                    <h5><a href="#"> Mail Transaction</a></h5>
+                                    <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                </div>
+                                <div class="col-sm-3 pro_content last_head">
+                                    <h5>20 April, 2016</h5>
+                                </div>
+                            </div></div>
+                    </div>
+                </div>
+                <!--//////////////////selects media popup end////////////////////-->
+                <div class="container main_desc">
+                    <div class="col-sm-12">
+                        <div class="project_con">
+                            <div class="col-sm-3 heading_pro first_head">
+                                <h5>Other Projects</h5>
+                            </div>
+                            <div class="col-sm-6 heading_pro">
+                                <h5>Brief Overview</h5>
+                            </div>
+                            <div class="col-sm-3 heading_pro last_head">
+                                <h5>Date Posted</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="project_desc">
+                            <div class="col-sm-3 pro_content">
+                                <h5><i class="fa fa-circle-o" aria-hidden="true"></i> E-Commerce</h5>
+                            </div>
+                            <div class="col-sm-6 pro_content miiddle_con">
+                                <h5><a href="#">Mobile Shopping </a></h5>
+                                <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                                <h5><a href="#">Money Transaction</a></h5>
+                                <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                            </div>
+                            <div class="col-sm-3 pro_content last_head">
+                                <h5>25 March, 2016</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="project_desc">
+                            <div class="col-sm-3 pro_content">
+                                <h5><i class="fa fa-circle-o" aria-hidden="true"></i> Social Media</h5>
+                            </div>
+                            <div class="col-sm-6 pro_content miiddle_con">
+                                <h5><a href="#">Mail Transaction</a></h5>
+                                <p>Lorem ipsum dolor sit amet, in mandamus abhorreant his, ea sea veniam vivendum cotidieque. An vis dolores fabellas. Ad per aperiam nonumes habemus. Te modo malis expetendis vis, facete animal inermis ne ius. In iuvaret discere ius, ne ius facilis eligendi intellegebat, et vix placerat definitionem. Esse mundi alienum ex nec, cum simul feugait invenire eu. Vix ne hinc facer.</p>
+                            </div>
+                            <div class="col-sm-3 pro_content last_head">
+                                <h5>20 April, 2016</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--section end-->
+            <!--content end-->
+
+        </div>
+        <footer>
+            <div class="container">
+                <div class="col-sm-12">
+                    <ul class="footer_menu">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script>
+            $(function () {
+                $('#media').change(function () {
+                    $('.contents').hide();
+                    $('#' + $(this).val()).show();
+                });
+            });
+            $(function () {
+                $('#media2').change(function () {
+                    $('.contents').hide();
+                    $('#' + $(this).val()).show();
+                });
+            });
+            $(function () {
+                $('#media3').change(function () {
+                    $('.contents').hide();
+                    $('#' + $(this).val()).show();
+                });
+            });
+
+        </script>
+        <script>
+            $(".forgatp").click(function () {
+                $("#detail").hide();
+                $("#edits").show();
+
+            });
+            $(".forgatp").click(function () {
+                $("#detail2").hide();
+                $("#edits2").show();
+
+            });
+            $(".invi").click(function () {
+                $("#pro").hide();
+                $("#invite").show();
+
+            });
+            $(".save").click(function () {
+                $("#edits").hide();
+                $("#detail").show();
+
+            });
+        </script>
+    </body>
+</html>
