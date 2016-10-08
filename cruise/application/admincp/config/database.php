@@ -50,9 +50,9 @@ $active_record = TRUE;
 if($_SERVER['HTTP_HOST']=="localhost")
 {
 	$db['default']['hostname'] = 'localhost';
-	$db['default']['username'] = 'root';
-	$db['default']['password'] = '';
-	$db['default']['database'] = 'cruise3';
+	$db['default']['username'] = 'robopcp7_admin';
+	$db['default']['password'] = 'aadi2007';
+	$db['default']['database'] = 'robopcp7_cruise';
 	$db['default']['dbdriver'] = 'mysql';
 	$db['default']['dbprefix'] = 'cru_';
 	$db['default']['pconnect'] = TRUE;
@@ -68,9 +68,9 @@ if($_SERVER['HTTP_HOST']=="localhost")
 else
 {
 	$db['default']['hostname'] = 'localhost';
-	$db['default']['username'] = 'wwsptalg_user16';
-	$db['default']['password'] = 'A1oa%Z(#T77^';
-	$db['default']['database'] = 'wwsptalg_db16';
+	$db['default']['username'] = 'robopcp7_admin';
+	$db['default']['password'] = 'aadi2007';
+	$db['default']['database'] = 'robopcp7_cruise';
 	$db['default']['dbdriver'] = 'mysql';
 	$db['default']['dbprefix'] = 'cru_';
 	$db['default']['pconnect'] = TRUE;
