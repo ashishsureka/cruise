@@ -35,7 +35,7 @@ $config['index_page'] = '';
 
 if($_SERVER['HTTP_HOST']=="localhost")
 {
-    $config['MAIN_SITE_URL'] = 'http://localhost/cruise/';
+    $config['MAIN_SITE_URL'] = 'http://www.robo-paathshaala.in';
 }
 else
 {
