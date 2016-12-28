@@ -1,0 +1,2 @@
+[27-Dec-2016 05:03:24 America/New_York] PHP Parse error:  syntax error, unexpected 'like_count' (T_STRING) in /home/robopcp7/public_html/cruise-platform.in/application/front/helpers/datalist_helper.php on line 325
+[27-Dec-2016 05:03:28 America/New_York] PHP Parse error:  syntax error, unexpected 'like_count' (T_STRING) in /home/robopcp7/public_html/cruise-platform.in/application/front/helpers/datalist_helper.php on line 325
